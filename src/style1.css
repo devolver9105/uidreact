@@ -1,0 +1,405 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  height: 100%;
+  background-image: url(thisisengineering-WsYamymQIxk-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+nav{
+  width: 100%;
+  background-color: red;
+  height: 3vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  a{
+      color: white;
+  }
+  a:hover{
+      color: yellow;
+  }
+}
+
+#btn1{
+  border: none;
+  background-color: transparent;
+  border-style: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background-color ease 0.3s;
+  a{
+      color: black;
+      font-size: 0.95rem;
+  }
+}
+#btn1:hover{
+  background-color: yellow;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: 550;
+  font-size: 0.80.rem;
+}
+
+.links{
+  margin-top: 1rem;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: calc(1.5);
+
+  a{
+      text-decoration: none;
+      color: white;
+      padding: 1rem;
+      font-size: 0.80rem;
+
+  }
+  
+  a:hover{
+      color: red;
+  }
+}
+.items{
+  margin-left: 50%;
+}
+.link2{
+  display: flex;
+  justify-content: end;
+}
+
+#links3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a{
+      font-size: 1.50rem;
+      color: black;
+      margin-top: -25px;
+
+      
+  }
+  a:hover{
+      color: white;
+  }
+  /* Dropdown Button */
+  .dropbtn {
+      text-decoration: none;
+      background-color: transparent;
+      color: black;
+      border: none;
+      cursor: pointer;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: hsla(0, 0%, 0%, 0.1);
+      border-radius: 5px;
+      height: fit-content;
+      min-width: 150px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+      z-index: 1;
+  }
+  .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 1.25rem;
+      padding: 10%;
+      margin-top: 2px;
+  }
+  .dropdown-content a:hover{
+      color: red;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+}
+span{
+  align-items: center;
+}
+
+.box{
+  margin-top: 75%;
+  border: 2px solid red;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: black;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  p{
+  margin-left: 45%;
+  padding-right: 5%;
+  }
+  #btn2{
+      border: 2px solid red;
+      border-radius: 9px;
+      cursor: pointer;
+      background-color: transparent;
+      a{
+          color: white;
+      }
+      a:hover{
+          color: yellow;
+      }
+
+  }
+}
+
+.container2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 0;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+
+  h3{
+      color: white;
+      margin-top: 5%;
+  }
+  p{
+      color: white;
+      font-size: 1rem;
+  }
+  
+  .links4{
+      ul{
+          list-style: none;
+      }
+      justify-content: center;
+      a{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          padding: 5%;
+          color: white;
+          margin-left: -100%;
+          font-weight: bolder;
+      }
+      a:hover{
+          color: yellow;
+      }
+      li{
+          font-weight: 900;
+      }
+  }
+  .social{
+      display: inline-flex;
+      a{
+          font-size: 1.75rem; 
+          text-align: center;
+          padding-left: 38%;
+          margin-top: 2rem;
+      }
+  }
+}
+
+.fa:hover {
+  color: cornflowerblue;
+}
+.fa-facebook{
+  background-color: transparent;
+  color: white;
+}
+.fa-linkedin{
+  background: transparent;
+  color: white;
+}
+.fa-whatsapp{
+  background: transparent;
+  color: white;
+}
+.fa-whatsapp:hover{
+  color: green;
+}
+.fa-instagram{
+  background: transparent;
+  color: white;
+}
+.fa-instagram:hover{
+  color: orangered;
+}
+.fa-youtube{
+  background: transparent;
+  color: white;
+}
+.fa-youtube:hover{
+  color: red;
+}
+.fa{
+  padding: 20px;
+  font-size: 40px;
+  width: 60px;
+  text-decoration: none;
+  margin: 5px 80px;
+}
+
+#logo{
+  grid-column: span 2; 
+  font-weight: 550;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.banner{
+  h1{
+      line-height: 45px;
+      display: block;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: white;
+      span{color: yellow;}
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-left: 15%;
+      margin-top: 20vh;
+      mark{
+          color: red;
+      }
+  }
+  #btn3{
+      border: none;
+      border-style: none;
+      border-radius: 30px;
+      background-color: red;
+      color: white;
+      font-size: 0.85rem;
+      width: 15rem;
+      height: 4vh;
+      margin-left: 15%;
+      cursor: pointer;
+  }
+  #btn3:hover{
+      transform: scale(1.15);
+  }
+}
+
+
+
+.box2{
+  display: inline-block;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid red;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  background-color: black;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  p{color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+  a:hover{
+      color: yellow;
+  }
+}
+
+.container1,
+.box{
+  padding: 0;
+  margin: 0;
+}
+
+.container1{
+  border: none;
+  border-radius: 15px;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  width: 55vw;
+  height: 30vh;
+  margin-left: 24%;
+  margin-top: 20%;
+  margin-bottom: 25%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  p{
+      color: white;
+      line-height: 35px;
+      font-size: 1.50rem;
+      padding: 2%;
+  }
+}
+
+/*media query*/
+
+@media screen and (max-width: 576px){
+  body{
+      padding: 0;
+      margin: 0;
+      background-image: none;
+      background: grey;
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow-x: hidden;
+      width: fit-content;
+  }
+  nav{
+      display:grid;
+      justify-content: center;
+      align-items: center;
+      height: fit-content;
+      a{
+          padding: 10px;
+          color: white;
+
+      }
+      a:hover{
+          color: yellow;
+      }
+      #btn1{margin-left: -28%; margin-top: 3%;}
+  }
+  .links{
+      #img{
+          display: none;
+      }
+  }
+  .items{
+      .link2{
+          margin-right: 25%;
+          a{font-size: 0.75rem;}
+      }
+      #links3{
+          display: grid;
+          margin-right: 55%;
+          a{
+              font-size: 1.25rem;
+              padding-bottom: 10%;
+              margin-top: 5%;
+              
+          }
+      }
+  }
+  .banner h1{margin-top: 15%;}
+
+  .container1{
+      height: fit-content;
+      width: fit-content;
+      margin-left: -1%;
+
+      p{
+          text-align: left;
+          margin-left: 20px;
+      }
+  }
+
+  .box{
+      padding-right: 80%;
+  }
+}

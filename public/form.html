@@ -1,0 +1,259 @@
+<DOCTYPE html!>
+    <html>
+        <head>
+            <title>
+                Forms
+            </title>
+            <style>
+                body {
+                    font-family: monospace;
+                    font-style: normal;
+                    background: linear-gradient(to bottom, lightgreen, lightblue);
+                    margin: 0px;
+                    padding: 0px;
+                }
+        
+                form {
+                    background-color:beige;
+                    padding: 40px;
+                    border-radius: 10px;
+                    width: 400px;
+                    margin: 20px auto;
+                    box-shadow: 0px 0px 10px black;
+                }
+        
+                        
+                label {
+                    font-weight: bold;
+                    color: black;
+                }
+        
+                input[type="text"],
+                input[type="date"],
+                select {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                    border: 1.2px solid grey;
+                    border-radius: 6px;
+                    box-sizing: border-box;
+                    
+                }
+
+                input[type="text"]:focus,
+                input[type="date"]:focus,
+                select:focus {
+                    border-color: blue; 
+                    outline: none; 
+                }
+        
+                textarea {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                    border: 1px solid #ddd;
+                    border-radius: 9px;
+                    box-sizing: border-box;
+                    
+                    
+                }
+        
+                textarea:focus {
+                    border-color: #007bff;
+                    outline: none;
+                }
+        
+                input[type="radio"],
+                input[type="checkbox"] {
+                    margin-right: 5px;
+                }
+        
+                select {
+                    padding: 10px;
+                }
+        
+                input[type="submit"] {
+                    background-color:palegoldenrod;
+                    color: black;
+                    padding: 10px 20px;
+                    border: black 1px solid;
+                    border-radius: 7px;
+                    cursor: pointer;
+                    
+                }
+        
+                input[type="submit"]:hover {
+                    background-color: lightsalmon; 
+                }
+                @media only screen and (max-width: 600px) {
+        form {
+            width: 90%; 
+        }
+        
+    }
+
+    @media only screen and (max-width: 400px) {
+        form {
+            width: 95%; 
+        }
+        
+}       
+            </style>
+        </head>
+        <body>
+            <form>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                
+                <label for="emailid">Email-id:</label>
+                <input type="text" id="emailid" name="emailid"><br><br>
+                
+                <label for="nationality">Nationality:</label><br>
+        <select id="nationality" name="nationality" required>
+            
+            <option value="">Select Nationality</option>
+            <option value="Indian">Indian</option>
+            <option value="Non-Indian">Non-Indian</option>
+        </select><br><br>
+                
+        <label for="HSE percentage">HSE percentage:</label><br>
+        <input type="text" id="HSE percentage" name="HSE percentage" ><br> <br>
+
+
+        <label for="SSLC percentage">SSLC percentage:</label><br>
+        <input type="text" id="SSLC percentage" name="SSLC percentage" ><br> <br>
+               
+
+            <label for="aadhar">Aadhar Number:</label><br>
+            <input type="text" id="aadhar" name="aadhar" ><br><br>
+            
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" ><br><br>
+
+
+            <label for="number">Number:</label><br>
+        <select id="phonecode" name="phonecode" required>
+            <option value="">Select Country Code</option>
+            <option value="+91">India (+91)</option>
+            <option value="+1">USA (+1)</option>
+            <option value="+44">UK (+44)</option>
+            <option value="+975">Bhutan (+975)</option>
+            <option value="+977">Nepal (+977)</option>
+            <option value="+81">Japan (+81)</option>
+            <option value="+880">Bangladesh (+880)</option>
+            <option value="+94">Sri Lanka (+94)</option>
+            <option value="+7">Russia (+7)</option>
+            <option value="+45">Denmark (+45)</option>
+            <option value="+33">France (+33)</option>
+            <option value="+49">Germany (+49)</option>
+            <option value="+264">Namibia (+264)</option>
+            <option value="+260">Zambia (+260)</option>
+            <option value="+254">Kenya (+254)</option>
+            <option value="Others">Others</option><br> <br>
+           
+        </select>
+        
+        <input type="text" id="number" name="number" required><br><br> <br>
+            
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" ></textarea><br><br>
+            
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" >
+            
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="transgender" name="gender" value="transgender">
+            <label for="transgender">Transgender</label><br><br> <br>
+            
+            <label for="socialstatus">Social Status:</label><br>
+            <select id="socialstatus" name="socialstatus" >
+                <option value="">---Select </option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="GEN">GEN</option>
+                <option value="OBC">OBC</option>
+                <option value="Others">Others</option>
+            </select><br><br>
+
+
+            <label for="Campus">Campus:</label><br>
+            <select id="Campus" name="Campus" >
+                <option value="">---Select </option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Jaipur">Jaipur</option>
+            </select><br><br>
+
+            <label for="HDYCTKAXYZ">How do you came to know about RUBY:</label><br>
+            <select id="HDYCTKAXYZ" name="HDYCTKAXYZ" >
+                <option value="">---Select</option>
+                <option value="Google search">Google search</option>
+                <option value="From relatives">From relatives</option>
+                <option value="Hoardings">Hoardings</option>
+                <option value="Online news">Online news</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Linkedin">Linkedin</option>
+                <option value="Career fairs">Career fairs</option>
+                <option value="Alumni">Alumni</option>
+                <option value="Students">Students</option>
+            </select><br><br>
+
+
+            <label for="degree">Degree:</label><br>
+            <select id="degree" name="degree" >
+                <option value="">---Select </option>
+                <option value="Btech">Btech</option>
+                <option value="Mtech">Mtech</option>
+                <option value="Msc">Msc</option>
+                <option value="Bsc">Bsc</option>
+                <option value="Hons">Hons</option>
+                <option value="Phd">Phd</option>
+                </select><br><br>
+
+                <label for="H/DS">Hosteller/DayScholar:</label><br>
+                <select id="H/DS" name="H/DS" >
+                    <option value="">---Select </option>
+                    <option value="Hostel">Hostel</option>
+                    <option value="Day Scholar">Day Scholar</option>
+                    </select>
+                    <br><br>
+
+
+                    <label for="Mother Tongue">Mother Tongue:</label><br>
+                <select id="Mother Tongue" name="Mother Tongue" >
+                    <option value="">---Select </option>
+                    <option value="Marathi">Marathi</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="English">English</option>
+                    </select><br>
+<br>
+
+                    <label for="Religion">Religion:</label><br>
+                    <select id="Religion" name="Religion" >
+                        <option value="">---Select </option>
+                        <option value="Jain">Jain</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Sikh">Sikh</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Christians">Christians</option>
+                        <option value="Buddhists">Buddhists</option>
+                        <option value="Judaism">Judaism</option>
+                        <option value="Atheist">Atheist</option>
+                        </select>
+                        <br>
+                        <br>
+    
+
+
+                <input type="submit" value="Submit">
+            </form>
+        </body>
+    </html>

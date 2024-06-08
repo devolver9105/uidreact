@@ -1,0 +1,426 @@
+
+*{
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  
+  }
+  .menubar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 22% ;
+    background: rgb(42, 40, 40);
+    z-index: 100;
+    transition: all 0.5s ease;
+  
+  }
+  .Ruby_logo img{
+    height: 100%; 
+    margin-left: 52vw;
+  }
+  
+  
+  .menubar.close{
+    width: 78px;
+  }
+  .menubar .logo-details{
+    background-color: #131313;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .menubar .logo-details i{
+    font-size: 30px;
+    color: white;
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+   
+  }
+  .menubar .logo-details .logo_name{
+      
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    transition-delay: 0.1s;
+    width: 100%;
+    
+  }
+  .menubar.close .logo-details .logo_name{
+    transition-delay: 0s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .menubar .nav-links{
+    height: 100%;
+    padding: 30px 0 150px 0;
+    overflow: auto;
+  }
+  
+  
+  .menubar .nav-links::-webkit-scrollbar{
+    display: none;
+  }
+  .menubar .nav-links li{
+      
+      margin: 6px;
+    position: relative;
+    list-style: none;
+    transition: all 0.4s ease;
+    
+  }
+  .menubar .nav-links li:hover{
+    background: #4d4d4f;
+  }
+  .menubar .nav-links li .iocn-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menubar.close .nav-links li .iocn-link{
+    display: block
+  }
+  .menubar .nav-links li i{
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .menubar .nav-links li.showMenu i.arrow{
+    transform: rotate(-180deg);
+  }
+  .menubar.close .nav-links i.arrow{
+    display: none;
+  }
+  .menubar .nav-links li a{
+      
+    display: flex;
+    align-items: center;
+    
+  }
+  .menubar .nav-links li a .link_name{
+      padding-bottom: 50px;
+      
+      
+      width: 100%;
+      
+    font-size: 18px;
+    font-weight: 500;
+    color: #e7e0e0;
+    transition: all 0.4s ease;
+  }
+  .menubar.close .nav-links li a .link_name{
+    opacity: 0;
+    pointer-events: none;
+  }
+  .menubar .nav-links li .sub-menu{
+    padding: 6px 6px 14px 80px;
+    margin-top: -10px;
+    background: #2f2f2f;
+    display: none;
+  }
+  .menubar .nav-links li.showMenu .sub-menu{
+    display: block;
+  }
+  .menubar .nav-links li .sub-menu a{
+    color: rgb(170, 172, 172);
+    font-size: 16px;
+    padding: 5px 0;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  .menubar .nav-links li .sub-menu a:hover{
+    opacity: 1;
+  }
+  .menubar.close .nav-links li .sub-menu{
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    margin-top: 0;
+    padding: 10px 20px;
+    border-radius: 0 6px 6px 0;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+    transition: 0s;
+  }
+  
+  .wrapper .Ruby_logo{
+    height: 250px;
+    display: flex;
+    margin-left: 1%;
+    flex-wrap: wrap;
+    width: 100%;
+  
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+  
+  }
+  
+  .wrapper .Ruby_logo {
+  
+    flex-wrap: wrap;
+    background: #131313;
+  
+  }
+  
+  .wrapper .container .card{
+    
+    margin:20px;
+    width: 530px;
+    border-radius: 18px;
+  }
+  .wrapper .container {
+    
+    
+    display: flex;
+    margin-left: 24%;
+    flex-wrap: wrap;
+    
+  }
+  @media screen and (max-width: 1520px) {
+    .menubar{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 27%;
+      background: rgb(42, 40, 40);
+      z-index: 100;
+      transition: all 0.5s ease;
+    
+    }
+    .wrapper .container .card{
+    
+      margin:20px;
+      width: 550px;
+      border-radius: 18px;
+    }
+    .wrapper .container {
+    
+    
+      display: flex;
+      margin-left: 27%;
+      flex-wrap: wrap;
+      
+    }
+  }
+  
+  @media screen and (max-width: 412px) {
+    
+    .menubar{
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 30%;
+      width: 100%;
+      background: rgb(42, 40, 40);
+      z-index: 100;
+      transition: all 0.5s ease;
+    
+    }
+    .menubar .nav-links li .sub-menu{
+      padding-left: 0%;
+    }
+    .wrapper .Ruby_logo{
+      margin-left: 0%;
+    }
+    .wrapper .Ruby_logo img{
+      margin-left: 18%;
+      
+    }
+    .wrapper .container{
+      margin-left: 0%;
+      justify-content: center;
+    }
+    .wrapper .container .card{
+  
+      width: auto;
+    }
+  
+  
+  
+  
+    
+  }
+  .wrapper{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+  
+  
+  }
+  .course-image{
+    margin-bottom: 15px;
+    height:230px;
+    background:rgb(109, 106, 32);
+    background-size: cover;
+    border-radius: 18px;
+  }
+  
+  .filter-link .active {
+    font-weight: bold;
+  }
+  
+  
+  .container .card a{
+    
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 25px ;
+    background-color: rgb(222, 21, 21);
+    color: rgb(249, 235, 235);
+    text-align: center;
+    display: block;
+    
+  
+  }
+  .container .card a{
+    text-decoration: none;
+    margin: 20px 80px;
+    border-radius: 20px;
+  }
+  .card:hover{
+    background-color: hsl(0, 5%, 79%);
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+  .container .card{
+    flex-grow: calc(1.15);
+    
+    background-color: #d7d7db;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* this is for the picture panel SO IGNORE IT.... */
+  
+  .c1{
+    background-image: url('https://webfiles.amrita.edu/2021/09/M3beQtHw-MSW-int-1384.jpg');
+    ;
+  }
+  
+  .c2{
+    background-image: url('https://webfiles.amrita.edu/2019/12/sLQ1CFlL-Banner-1384-cbt-aero-2.jpg');
+    ;
+  }
+  
+  .c3{
+    background-image: url('https://webfiles.amrita.edu/2019/11/66wnpQQj-Banner-1384-cbt-civil.jpg');
+    ;
+  }
+  
+  .c4{
+    background-image: url('https://webfiles.amrita.edu/2019/12/rE9oOfim-Elec-3-1384.jpg');
+    ;
+  }
+  
+  .c5{
+    background-image: url('https://webfiles.amrita.edu/2022/11/PvrrMoIn-ai-robotics-banner.jpg');
+    ;
+  }
+  
+  
+  .c6{
+    background-image: url('https://webfiles.amrita.edu/2019/12/iF7TbNHp-Banner_dept_mtech.jpg');
+    ;
+  }
+  .c7{
+    background-image: url('https://webfiles.amrita.edu/2024/02/KRwSZPUu-amrita-msc-visual-connunicat-digital-banner.jpg');
+    ;
+  }
+  .c8{
+    background-image: url('https://webfiles.amrita.edu/2019/11/JtAO1dRp-Business1-1384.jpg');
+    ;
+  }
+  .c9{
+    background-image: url('https://webfiles.amrita.edu/2019/11/FnS0Eky0-Banner_dept_bsc_biotechnology.jpg');
+    ;
+  }
+  .c10{
+    background-image: url('https://webfiles.amrita.edu/2019/06/V6qPYOea-Banner_dept_biotechnology.jpg');
+    ;
+  }
+  .c11{
+    background-image: url('https://webfiles.amrita.edu/2019/12/ERoST1ZF-Banner_dept_biotechnology.jpg');
+    ;
+  }
+  .c12{
+    background-image: url('https://webfiles.amrita.edu/2019/12/O8PqY3cx-Banner_dept_biotechnology_msc1.jpg');
+    ;
+  }
+  .c13{
+    background-image: url('https://webfiles.amrita.edu/2024/02/a1XA9K8X-kochi-arts-humanities-banner.jpg');
+    ;
+  }
+  
+  
+  .c14{
+    background-image: url('https://webfiles.amrita.edu/2023/03/10JN1XFi-department-mathematics-kochi.jpg');
+    ;
+  }
+  
+  
+  .c15{
+    background-image: url('https://webfiles.amrita.edu/2022/01/lSkxwFLh-amrita-admission-banner.jpg');
+    ;
+  }
+  
+  .c16{
+    background-image: url('https://webfiles.amrita.edu/2019/11/24OZnBSA-Visual-photo1384.jpg');
+    ;
+  }
+  .c17{
+    background-image: url('https://webfiles.amrita.edu/2021/09/Ieht7fcR-Blgr-1384.jpg');
+    ;
+  }
+  .c18{
+    background-image: url('https://webfiles.amrita.edu/2019/11/NZ5VPNjR-Physics-1384.jpg');
+    ;
+  }
+  .c19{
+    background-image: url('https://webfiles.amrita.edu/2019/11/pFTRJhwK-university-buffalo-usa-mba-ms-dual-degree.jpg');
+    ;
+  }
+  .c20{
+    background-image: url('https://webfiles.amrita.edu/2019/11/v5C9dSlE-Comm-mys-1384-1.jpg');
+    ;
+  }
+  .c21{
+    background-image: url('https://webfiles.amrita.edu/2019/11/52cXKLSS-Com-mys-1-1384.jpg');
+    ;
+  }
+  .c22{
+    background-image: url('https://webfiles.amrita.edu/2019/12/fBHkB79p-Banner_dept_biochemistry_bsc.jpg');
+    ;
+  }
+  .c23{
+    background-image: url('https://webfiles.amrita.edu/2023/03/v6ycfDNk-mathematics-kochi-department-banner.jpg');
+    ;
+  }
+  .c24{
+    background-image: url('https://webfiles.amrita.edu/2019/12/wosReZtx-Physics-1-1384.jpg');
+    ;
+  }
+  
+  
